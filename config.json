@@ -1,0 +1,41 @@
+{
+    "fft_initial_view": {
+        "variable_group": "emotion",
+        "show_fit_line": false
+    },
+    "realtime_settings": {
+        "video_source": "0",
+        "yolo_model_path": "models/yolov8n.pt",
+        "mediapipe_model_path": "models/face_landmarker.task",
+        "device": "cpu"
+    },
+    "analysis_parameters": {
+        "UPDATE_INTERVAL_MS": 1000,
+        "SLIDING_WINDOW_SECONDS": 30
+    },
+    "variable_definitions": {
+        "emotion": [
+            "happy",
+            "surprise",
+            "neutral",
+            "sad",
+            "contempt",
+            "disgust",
+            "fear",
+            "anger"
+        ],
+        "behavior": [
+            "lips",
+            "left_eye",
+            "right_eye",
+            "head",
+            "left_shoulder",
+            "right_shoulder",
+            "left_hand",
+            "right_hand",
+            "roll",
+            "pitch",
+            "yaw"
+        ]
+    }
+}
